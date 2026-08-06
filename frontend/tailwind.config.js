@@ -7,6 +7,27 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        serif: ['"Cormorant Garamond"', 'serif'],
+        sans: ['Manrope', 'sans-serif'],
+      },
+      colors: {
+        sky: {
+          bg: '#0A0A0B',
+          surface: '#121214',
+          elevated: '#1A1A1D',
+        },
+        tooth: {
+          orange: '#FF5E00',
+          teal: '#00E5FF',
+          gold: '#FFD700',
+          red: '#FF204E',
+          purple: '#9D00FF',
+          blue: '#2F6BFF',
+          green: '#00FF66',
+          brown: '#B5651D',
+        },
+      },
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
