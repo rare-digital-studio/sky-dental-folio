@@ -1,0 +1,149 @@
+{
+  "theme": "dark",
+  "project_name": "Sky Dental Wellness Centre",
+  "art_direction": "Dark premium editorial, clinical precision meets luxury. Awwwards-style typography-driven design, minimal glare, high contrast hierarchy, deep space backgrounds with vivid restrained accents derived from the multi-colored teeth logo.",
+  "typography": {
+    "strategy": "Swiss Brutalist meets Old Money Tech - High contrast serif for editorial elegance mixed with geometric sans for clinical clarity.",
+    "heading_font": "Cormorant Garamond",
+    "body_font": "Manrope",
+    "scales": {
+      "h1": "text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tighter leading-[0.9]",
+      "h2": "text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-none",
+      "h3": "text-2xl sm:text-3xl tracking-tight",
+      "body_lg": "text-lg sm:text-xl leading-relaxed text-zinc-300",
+      "body": "text-base leading-relaxed text-zinc-400",
+      "overline": "text-xs tracking-[0.2em] uppercase text-zinc-500 font-bold"
+    }
+  },
+  "colors": {
+    "background": {
+      "base": "#0A0A0B",
+      "surface": "#121214",
+      "surface_elevated": "#1A1A1D",
+      "glass": "bg-black/60 backdrop-blur-2xl border-white/5"
+    },
+    "text": {
+      "primary": "#EDEDED",
+      "secondary": "#A1A1AA",
+      "muted": "#71717A",
+      "inverse": "#0A0A0B"
+    },
+    "accents": {
+      "orange": "#FF5E00",
+      "teal": "#00E5FF",
+      "gold": "#FFD700",
+      "red": "#FF204E",
+      "purple": "#9D00FF",
+      "blue": "#0044FF",
+      "green": "#00FF66",
+      "brown": "#8B4513"
+    },
+    "gradients": "Do not use cheap flat gradients. Instead, use massive, blurred, low-opacity radial gradients (auras) in the deep background representing the rainbow tooth logo colors."
+  },
+  "layouts": {
+    "spacing_system": "Generous spacing philosophy. Use p-8 to p-24 for padding, gap-8 to gap-16 for grids.",
+    "grid_modes": {
+      "bento_marketing": "grid-cols-1 md:grid-cols-12 gap-8. Highly asymmetric. Spans like col-span-8 row-span-2 for hero items, col-span-4 for secondary.",
+      "editorial_list": "grid-cols-1 md:grid-cols-4 gap-x-8 gap-y-16 border-t border-white/10 pt-8"
+    }
+  },
+  "motion": {
+    "scrolling": "Lenis smooth scroll is MANDATORY. Standard browser scroll breaks the premium feel.",
+    "animations": {
+      "kinetic_hero": "Framer Motion line-by-line reveal with overflow-hidden wrappers on text. y: 100% to 0%. duration: 0.8s, ease: [0.76, 0, 0.24, 1].",
+      "parallax": "Framer Motion useScroll + useTransform for subtle image y-axis translation on scroll. Images should move at different speeds.",
+      "marquee": "react-fast-marquee. Very slow, smooth drift. Editorial ribbon style with Cormorant Garamond italic, massive gaps between items (gap-32), low opacity text."
+    }
+  },
+  "visual_enhancers": {
+    "textures": "Include a fixed, pointer-events-none noise/grain overlay spanning the entire viewport at 3% opacity to kill digital flatness.",
+    "cards": "Do not use solid borders. Use 1px inner stroke border-white/5 with a dark surface bg. Hover state brings a subtle glow or -translate-y-1.",
+    "images": "Real photography treated deliberately. Use spotlight effect or clipped architectural frames (tall and narrow, or perfect squares). Black and white conversion on hover or vice versa."
+  },
+  "components_to_build": {
+    "KineticHero": "Deep dark background. Massive H1 typography line-by-line mask reveal. Subtle, slow-moving blurred orbs of the logo's rainbow colors in the far background. No 3D models, just floating depth.",
+    "EditorialMarquee": "Slow moving list of treatments.",
+    "ManifestoSection": "Numbered chapters (01, 02, 03). Massive high-contrast numbers in serif, aligned with short, powerful mission statements.",
+    "ServicesBento": "Bento grid of services. Each block features a subtle hover state where a specific brand color (orange, teal, etc.) lightly glows from the bottom.",
+    "TeamSpotlight": "4 vertical cards for doctors. Grayscale photos that turn full color on hover. Include name, degrees, specialty.",
+    "LocationsBlock": "Clean dual-column layout for the two units. Include address, exact phone numbers, and a sleek 'Call Now' pill button."
+  },
+  "content_mapping": {
+    "team": [
+      {
+        "name": "Dr. Srikar Yallapragada",
+        "qualifications": "BDS, CCRP, FRCD",
+        "role": "Root Canal Specialist",
+        "image_url": "https://images.unsplash.com/photo-1612349316228-5942a9b489c2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBkb2N0b3IlMjBwb3J0cmFpdCUyMGNsb3NlJTIwdXB8ZW58MHx8fHwxNzg2MDM5NzIzfDA&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "name": "Dr. Sai Shreya Yallapragada",
+        "qualifications": "BDS, MDS",
+        "role": "Periodontist, Implantologist",
+        "image_url": "https://images.unsplash.com/photo-1673865641073-4479f93a7776?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBkb2N0b3IlMjBwb3J0cmFpdCUyMGNsb3NlJTIwdXB8ZW58MHx8fHwxNzg2MDM5NzIzfDA&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "name": "Dr. Bharghav Rayala",
+        "qualifications": "MDS",
+        "role": "Orthodontist & Clear Aligner Specialist",
+        "image_url": "https://images.unsplash.com/photo-1612531385446-f7e6d131e1d0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBkb2N0b3IlMjBwb3J0cmFpdCUyMGNsb3NlJTIwdXB8ZW58MHx8fHwxNzg2MDM5NzIzfDA&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "name": "Dr. Divya Sree Kommineni",
+        "qualifications": "BDS, MDS",
+        "role": "Pediatric & Preventive Dentistry",
+        "image_url": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkb2N0b3IlMjBwb3J0cmFpdCUyMGNsb3NlJTIwdXB8ZW58MHx8fHwxNzg2MDM5NzIzfDA&ixlib=rb-4.1.0&q=85"
+      }
+    ],
+    "locations": [
+      {
+        "unit": "Unit 1",
+        "area": "Boduppal, Hyderabad",
+        "phone": "07331120919"
+      },
+      {
+        "unit": "Unit 2",
+        "area": "Saidabad / Saroornagar, Hyderabad",
+        "phone": "08977508487"
+      }
+    ],
+    "services": [
+      "Root Canal",
+      "Periodontics & Implants",
+      "Orthodontics & Clear Aligners",
+      "Pediatric Dentistry",
+      "General Dentistry (Cleaning, Whitening, Crowns, Extractions)"
+    ]
+  },
+  "image_urls": {
+    "clinic_interior": "https://images.unsplash.com/photo-1642844613096-7b743b7d9915?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwyfHxwcmVtaXVtJTIwZGFyayUyMG1vZGVybiUyMGRlbnRhbCUyMGNsaW5pYyUyMGludGVyaW9yfGVufDB8fHx8MTc4NjAzOTcyM3ww&ixlib=rb-4.1.0&q=85",
+    "abstract_texture": "https://images.unsplash.com/photo-1572117490130-c6acd085aeb7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwyfHxtYWNybyUyMGRlbnRhbCUyMHRvb2xzJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzg2MDM5NzIzfDA&ixlib=rb-4.1.0&q=85"
+  },
+  "libraries_to_install": [
+    "framer-motion",
+    "lenis",
+    "react-fast-marquee",
+    "@phosphor-icons/react",
+    "lucide-react"
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. In frontend design, this creates what users call the 'AI slop' aesthetic. Avoid this.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as flat gradients.",
+    "Create depth through layered design elements with z-index hierarchy and parallax.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur) for sticky headers, never just transparent.",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Add transitions to specific properties only.",
+    "You MUST NOT center align the app container. No .App { text-align: center; }.",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations.",
+    "NEVER use AI assistant Emoji characters.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Subtle grain textures, noise overlays, custom cursors separate good from extraordinary.",
+    "All interactive and key informational elements MUST include a data-testid attribute.",
+    "Provide design implementation in standard React .js or .jsx, not .tsx unless strictly required."
+  ],
+  "accessibility": {
+    "focus_states": "High contrast ring offset on focus.",
+    "contrast": "Text must meet WCAG AA against #0A0A0B.",
+    "motion": "Respect prefers-reduced-motion media query by disabling parallax where necessary."
+  }
+}
