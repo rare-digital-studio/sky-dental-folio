@@ -40,9 +40,9 @@ export const Navbar = () => {
           className="flex items-center gap-3 group"
         >
           <img
-            src="/assets/logo.jpeg"
+            src="/assets/logo.png"
             alt="Sky Dental Wellness Centre"
-            className="h-9 sm:h-11 w-auto object-contain"
+            className="h-4 sm:h-14 w-auto object-contain"
           />
         </a>
 
